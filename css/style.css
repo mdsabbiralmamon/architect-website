@@ -14,7 +14,7 @@
 .container {
     width: 75%;
     max-width: 1440px;
-    margin: 0px auto;
+    margin: auto;
 }
 
 .button-primary {
@@ -39,8 +39,7 @@ header {
     background-color: #FF900E1A;
     border: .000001px solid #FF900E1A;
     max-width: 100%;
-    width: 100vw;
-} 
+}
 
 header .navContainer {
     display: flex;
@@ -52,7 +51,7 @@ header .navContainer {
 
 header .leftLogo h2 {
     text-align: center;
-    font-size: 45px;
+    font-size: 2.813rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -95,7 +94,7 @@ header .upperHeader button {
     margin: 32px auto 50px auto;
 }
 
-header .lowerHeaderImage img{
+header .lowerHeaderImage img {
     max-width: 1440px;
     width: 100%;
     margin-bottom: 45px;
@@ -105,27 +104,82 @@ header .lowerHeaderImage img{
             Responsive CSS
 ========================================== */
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
-    .container{
-        width: 98%;
+    .container {
+        width: 95%;
+        margin: auto;
     }
 
-    header{
-        min-width: 335px;
-        width: 100vw;
+    header {
+        min-width: 210px;
     }
 
     header .navContainer {
         flex-direction: column;
+        gap: 20px;
     }
 
-    header .navContainer ul {
+    header .leftLogo h2 {
+        font-size: 2rem;
+    }
+
+    header .rightNav ul {
+        flex-direction: column;
         gap: 20px;
+    }
+
+    header .upperHeader {
+        width: 335px;
+    }
+
+    header .upperHeader h2 {
+        font-size: 2rem;
+        margin: 20px auto 20px auto;
+    }
+
+    header .lowerHeaderImage img {
+        width: 100%;
+        margin-bottom: 25px;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 576px) and (max-width: 960) {
-    
+/* Medium devices (landscape tablets, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 960px) {
+
+    .button-primary {
+        width: 150px;
+        height: 50px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header {
+        min-width: 210px;
+    }
+
+    header .navContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .leftLogo h2 {
+        font-size: 3rem;
+    }
+
+    header .upperHeader {
+        min-width: 335px;
+    }
+
+    header .upperHeader h2 {
+        font-size: 2rem;
+        margin: 20px auto 20px auto;
+    }
+
+    header .lowerHeaderImage img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
