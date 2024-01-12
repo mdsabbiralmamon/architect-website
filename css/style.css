@@ -37,13 +37,12 @@
 
 header {
     background-color: #FF900E1A;
-    border: 2px solid red;
+    border: .000001px solid #FF900E1A;
+    max-width: 100%;
     width: 100vw;
-    height: 1322px;
-}
+} 
 
 header .navContainer {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -99,4 +98,34 @@ header .upperHeader button {
 header .lowerHeaderImage img{
     max-width: 1440px;
     width: 100%;
+    margin-bottom: 45px;
+}
+
+/* ==========================================
+            Responsive CSS
+========================================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    .container{
+        width: 98%;
+    }
+
+    header{
+        min-width: 335px;
+        width: 100vw;
+    }
+
+    header .navContainer {
+        flex-direction: column;
+    }
+
+    header .navContainer ul {
+        gap: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 576px) and (max-width: 960) {
+    
 }
