@@ -107,6 +107,7 @@ header .lowerHeaderImage img {
 main .container .quickFeatureContainer {
     display: flex;
     justify-content: space-between;
+    margin: 85px 0px;
 }
 
 main .container .quickFeatureContainer .leftGrid {
@@ -117,36 +118,44 @@ main .container .quickFeatureContainer .leftGrid {
     gap: 24px;
 }
 
-main .container .quickFeatureContainer .rightTitle {
+main .container .quickFeatureContainer .rightTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 708px;
+    width: 49.17%;
+    padding: 61px;
+}
+
+main .container .quickFeatureContainer .rightTitleContainer .rightTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 708px;
-    width: 49.17%;
+    width: fit-content;
 }
 
-main .container .quickFeatureContainer .rightTitle h2 {
+main .container .quickFeatureContainer .rightTitleContainer .rightTitle h2 {
     width: 468px;
 }
 
-main .container .quickFeatureContainer .rightTitle h2 .quickList {
+main .container .quickFeatureContainer .rightTitleContainer .rightTitle h2 .quickList {
     color: #727272;
     font-size: 45px;
     font-weight: 500;
 }
 
-main .container .quickFeatureContainer .rightTitle h2 .ofOur {
+main .container .quickFeatureContainer .rightTitleContainer .rightTitle h2 .ofOur {
     font-size: 45px;
     font-weight: 700;
 }
 
-main .container .quickFeatureContainer .rightTitle h2 .features {
+main .container .quickFeatureContainer .rightTitleContainer .rightTitle h2 .features {
     color: #FF900E;
     font-size: 45px;
     font-weight: 700;
 }
 
-main .container .quickFeatureContainer .rightTitle p {
+main .container .quickFeatureContainer .rightTitleContainer .rightTitle p {
     width: 537px;
     color: #727272;
     font-size: 16px;
