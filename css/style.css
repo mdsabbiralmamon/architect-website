@@ -101,6 +101,63 @@ header .lowerHeaderImage img {
 }
 
 /* ==========================================
+            quick features CSS
+========================================== */
+
+main .container .quickFeatureContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .container .quickFeatureContainer .leftGrid {
+    max-width: 708px;
+    width: 49.17%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+main .container .quickFeatureContainer .rightTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 708px;
+    width: 49.17%;
+}
+
+main .container .quickFeatureContainer .rightTitle h2 {
+    width: 468px;
+}
+
+main .container .quickFeatureContainer .rightTitle h2 .quickList {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+main .container .quickFeatureContainer .rightTitle h2 .ofOur {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+main .container .quickFeatureContainer .rightTitle h2 .features {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+main .container .quickFeatureContainer .rightTitle p {
+    width: 537px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px 0px 32px 0px;
+}
+
+
+
+/* ==========================================
             Responsive CSS
 ========================================== */
 
